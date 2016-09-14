@@ -1,0 +1,54 @@
+body, h1 {
+	padding: 0;
+	margin: 0;
+}
+
+header.main-header {
+	background-color: #000000;
+	padding: 50px 0 40px 90px;
+}
+
+header.main-header .header-logo {
+	height: 53px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/logo.png);
+}
+
+main.container {
+	min-width: 1900px;
+}
+
+main.container header.container-header {
+	padding: 100px 0;
+	text-align: center;
+}
+
+main.container header.container-header h1 {
+	font-family: 'Din Light';
+	font-size: 70px;
+	font-weight: 200;
+	color: #565656;
+}
+
+section.container-form {
+	width: 970px;
+	padding: 0 200px;
+}
+
+.container-form form.main-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.container-form form.main-form .flex-item:nth-child(1),
+.container-form form.main-form .flex-item:nth-child(3) {
+	width: 614px;
+}
+
+span[class^='error'] {
+    display: none;
+}

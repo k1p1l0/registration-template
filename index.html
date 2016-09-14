@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="header-logo"></div>
+	</header>
+
+	<main class="container">
+		<header class="container-header">
+			<h1>Please complete the details below</h1>
+		</header>
+
+		<section class="container-form">
+			<form class="main-form">
+				<div class="flex-item">
+					<span class="errorPrefix">*Prefix</span>
+					<select name="prefix" class="form-prefix">
+		              <option></option>
+		              <option value="dark">Dr</option>
+		              <option value="dark">Mr</option>
+		              <option value="dark">Mrs</option>
+		              <option value="dark">Miss</option>
+		            </select>
+
+		            <span class="errorName">*Please enter a name</span>
+		            <input type="text" name="firstname" placeholder="First Name">		            
+		            <span class="errorName">*Please enter a name</span>
+		            <input type="text" name="lastname" placeholder="Sur Name">
+	            </div>
+
+	            <div class="flex-item">
+					<span class="errorEmail">*Please enter a valid email address</span>
+		            <input type="email" name="email" placeholder="Email">
+	            </div>	            
+
+	            <div class="flex-item">
+					<span class="errorProfession">*Please choose a profession</span>
+		            <input type="email" name="profession" placeholder="Profession">
+	            </div>	            
+
+	            <div class="flex-item">
+					<span class="errorNationality">*Please choose a nationality</span>
+		            <input type="email" name="nationality" placeholder="Nationality">
+	            </div>
+
+	            <div class="flex-item">
+		            <input type="checkbox" name="checked" value="checked">
+		            <p>By ticking this box you agree to let Sagacity use your email to send you
+	                updates and relevant information, you can unsubscribe at any time.</p>
+	            </div>
+
+	            <div class="flex-item">
+		            <button type="submit" name="submit">Submit</button>
+	            </div>
+            </form>
+		</section>
+	</main>
+</body>
+</html>
