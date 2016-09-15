@@ -17,10 +17,11 @@ header.main-header {
 }
 
 header.main-header .header-logo {
+  	width: 349px;
 	height: 53px;
-	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url(../images/logo.png);
+	background-image: url(../images/sprite.png);
+  	background-position: 0px 0px;
 }
 
 main.container {
@@ -62,8 +63,6 @@ section.container-form {
 
 /* ICONS START*/
 .container-form form.main-form .flex-item:not(:nth-last-child(2)):before {
-	background-size: contain;
-	background-repeat: no-repeat;
 	content: ' ';
     pointer-events: none;
     z-index: 1000;
@@ -74,7 +73,10 @@ section.container-form {
 
 /* USER ICON */
 .container-form form.main-form .flex-item:nth-child(1):before {
-	background-image: url(../images/icons/user.png);
+	background-image: url(../images/sprite.png);
+	background-position: 0px -53px;
+	width: 80px;
+	height: 79px;
     position: absolute;
     left: -125px;
     top: 0px;
@@ -82,7 +84,10 @@ section.container-form {
 
 /* ENVELOPE ICON */
 .container-form form.main-form .flex-item:nth-child(2):before{
-	background-image: url(../images/icons/envelope.png);
+	background-image: url(../images/sprite.png);
+	background-position: -159px -53px;
+	width: 83px;
+	height: 62px;
     position: absolute;
     left: -130px;
     bottom: 4px;
@@ -90,16 +95,22 @@ section.container-form {
 
 /* BRIEFCASE ICON */
 .container-form form.main-form .flex-item:nth-child(3):before{
-	background-image: url(../images/icons/chart.png);
-    position: absolute;
+	background-image: url(../images/sprite.png);
+	background-position: -80px -53px;
+	width: 79px;
+	height: 75px;
+	position: absolute;
     left: -128px;
     bottom: 0px;
 }
 
 /* TACK ICON */
 .container-form form.main-form .flex-item:nth-child(4):before{
-	background-image: url(../images/icons/tack.png);
-    position: absolute;
+	background-image: url(../images/sprite.png);
+	background-position: 0px -132px;
+	width: 55px;
+	height: 68px;
+	position: absolute;
     left: -110px;
     bottom: 0px;
 }
@@ -108,17 +119,15 @@ section.container-form {
 
 /* ARROW ICON START*/
 .icon:before {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-image: url(../images/icons/arrow.png);
+  background-image: url(../images/sprite.png);
+  background-position: -242px -53px;
+  width: 50px;
+  height: 25px;
     content: ' ';
     color: #cdcdcd;
     pointer-events: none;
     z-index: 1000;
     display: block;
-    width: 50px;
-    height: 25px;
 }
 
 .icon-arrow:before {
@@ -134,15 +143,10 @@ section.container-form {
 }
 /* ARROW ICON END*/
 
-/*.container-form form.main-form .flex-item:nth-child(1),
-.container-form form.main-form .flex-item:nth-child(3) {
-	width: 615px;
-}*/
 
 .container-form form.main-form .flex-item:not(:nth-child(2)) {
 	width: 615px;
 }
-
 
 .form-prefix {
 	position: relative;
@@ -161,7 +165,6 @@ section.container-form {
    color: #565656;
    padding: 0 15px;
 }
-
 
 .box {
 	width: 250px;
