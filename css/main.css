@@ -70,38 +70,85 @@ section.container-form {
 	top: -40px;
 }*/
 
-/* ICONS */
+
+/* ICONS START*/
+.container-form form.main-form .flex-item:before {
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: ' ';
+    pointer-events: none;
+    z-index: 1000;
+    width: 80px;
+    height: 70px;
+    display: block;
+}
+
+/* USER ICON */
 .container-form form.main-form .flex-item:nth-child(1):before {
-  	font-family: 'FontAwesome';
-    font-size: 85px;
-    content: '\f007';
-    color: #71b9dd;
-    display: inline-block;
+	background-image: url(../images/icons/user.png);
     position: absolute;
-    left: -140px;
+    left: -125px;
     top: 0px;
-    pointer-events: none;
-    z-index: 1000;
 }
 
+/* ENVELOPE ICON */
 .container-form form.main-form .flex-item:nth-child(2):before{
-  	font-family: 'FontAwesome';
-    font-size: 80px;
-    content: '\f0e0';
-    color: #71b9dd;
-    display: inline-block;
+	background-image: url(../images/icons/envelope.png);
     position: absolute;
-    left: -110px;
+    left: -130px;
     bottom: 4px;
+}
+
+/* BRIEFCASE ICON */
+.container-form form.main-form .flex-item:nth-child(3):before{
+	background-image: url(../images/icons/chart.png);
+    position: absolute;
+    left: -128px;
+    bottom: 0px;
+}
+
+/* TACK ICON */
+.container-form form.main-form .flex-item:nth-child(4):before{
+	background-image: url(../images/icons/tack.png);
+    position: absolute;
+    left: -120px;
+    bottom: 0px;
+}
+
+/* ICONS END*/
+
+/* ARROW ICON START*/
+.icon:before {
+	font-family: 'FontAwesome';
+    font-size: 85px;
+    content: '\f0d7';
+    color: #cdcdcd;
     pointer-events: none;
     z-index: 1000;
 }
 
-.container-form form.main-form .flex-item:nth-child(1),
+.icon-arrow:before {
+    position: absolute;
+    left: 22px;
+    top: 0px;
+}
+
+.icon-arrow-big:before {
+    position: absolute;
+    right: 25px;
+    top: 50px;
+}
+/* ARROW ICON END*/
+
+/*.container-form form.main-form .flex-item:nth-child(1),
 .container-form form.main-form .flex-item:nth-child(3) {
-	position: relative;
+	width: 615px;
+}*/
+
+.container-form form.main-form .flex-item:not(:nth-child(2)) {
 	width: 615px;
 }
+
 
 .form-prefix {
 	position: relative;
@@ -119,23 +166,6 @@ section.container-form {
    font-size: 32px;
 }
 
-.icon-arrow {
-    position: relative;
-}
-
-.icon-arrow:before {
-    font-family: 'FontAwesome';
-    font-size: 85px;
-    content: '\f0d7';
-    color: #cdcdcd;
-    display: inline-block;
-    position: absolute;
-    left: 22px;
-    top: 0px;
-    pointer-events: none;
-    z-index: 1000;
-}
-
 
 .box {
 	width: 250px;
@@ -143,15 +173,10 @@ section.container-form {
 	outline: none; 
 	background-color: #ededed;
 	padding: 20px 15px;
-	margin-left: 15px;
 	font-size: 32px;
 	font-family: 'Din Light';
 	color: #565656;
 	box-sizing: border-box;
-}
-
-.box.big {
-	width: 610px;
 }
 
 .box::-webkit-input-placeholder {
@@ -162,4 +187,20 @@ section.container-form {
 .box:focus::-webkit-input-placeholder {
 	opacity: 0; 
 	transition: opacity 0.3s ease;
+}
+
+.box.big {
+	width: 615px;
+}
+
+.box.chooser {
+	position: relative;
+	margin-top: 50px;
+	flex-grow: 1;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    outline: none;
+    font-family: 'Din Light';
+    font-size: 33px;
 }
