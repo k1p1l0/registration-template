@@ -5,6 +5,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
 	<header class="main-header">
@@ -20,23 +21,25 @@
 			<form class="main-form">
 				<div class="flex-item">
 					<span class="errorPrefix">*Prefix</span>
-					<select name="prefix" class="form-prefix">
-		              <option></option>
-		              <option value="dark">Dr</option>
-		              <option value="dark">Mr</option>
-		              <option value="dark">Mrs</option>
-		              <option value="dark">Miss</option>
-		            </select>
+					<div class="icon-arrow">
+						<select name="prefix" class="form-prefix">
+			              <option></option>
+			              <option value="dark">Dr</option>
+			              <option value="dark">Mr</option>
+			              <option value="dark">Mrs</option>
+			              <option value="dark">Miss</option>
+			            </select>
+					</div>
 
 		            <span class="errorName">*Please enter a name</span>
-		            <input type="text" name="firstname" placeholder="First Name">		            
+		            <input type="text" class="box" name="firstname" placeholder="First Name">		            
 		            <span class="errorName">*Please enter a name</span>
-		            <input type="text" name="lastname" placeholder="Sur Name">
+		            <input type="text" class="box" name="lastname" placeholder="Sur Name">
 	            </div>
 
 	            <div class="flex-item">
 					<span class="errorEmail">*Please enter a valid email address</span>
-		            <input type="email" name="email" placeholder="Email">
+		            <input type="email" class="box big" name="email" placeholder="Email">
 	            </div>	            
 
 	            <div class="flex-item">
