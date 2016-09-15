@@ -11,6 +11,10 @@ span[class^='error'] {
 	border: 1px solid red;
 }
 
+.hide-before:before {
+    display: none !important;
+}
+
 header.main-header {
 	background-color: #000000;
 	padding: 50px 0 40px 90px;
@@ -24,6 +28,7 @@ header.main-header .header-logo {
 }
 
 main.container {
+	margin: 0 auto;
 	width: 1900px;
 	text-align: center;
 }
@@ -42,7 +47,7 @@ main.container header.container-header h1 {
 
 section.container-form {
 	margin: 0 auto;
-	width: 1453px;
+	width: 1460px;
 }
 
 .container-form form.main-form {
@@ -86,8 +91,8 @@ section.container-form {
     color: #71b9dd;
     display: inline-block;
     position: absolute;
-    left: -120px;
-    bottom: 0px;
+    left: -110px;
+    bottom: 4px;
     pointer-events: none;
     z-index: 1000;
 }
@@ -130,6 +135,7 @@ section.container-form {
     pointer-events: none;
     z-index: 1000;
 }
+
 
 .box {
 	width: 250px;
