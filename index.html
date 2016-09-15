@@ -3,9 +3,10 @@
 <head>
 	<title>Register Form</title>
 
+	<script type="text/javascript" src="js/main.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
 	<header class="main-header">
@@ -64,32 +65,18 @@
         </div>
 
         <div class="flex-item">
-          <input type="checkbox" name="checked" value="checked">
-          <p>By ticking this box you agree to let Sagacity use your email to send you
-            updates and relevant information, you can unsubscribe at any time.</p>
+	       	<div class="squared">
+		      	<input type="checkbox" value="None" id="squaredFour" name="check" checked />
+		      	<label for="squaredFour"><span>By ticking this box you agree to let Unilever use your email to send you
+					updates and relevant information, you can unsubscribe at any time.</span></label>
+	    		</div>
         </div>
 
         <div class="flex-item">
-          <button type="submit" name="submit">Submit</button>
+          <button type="submit" class="btn-submit" name="submit">Submit</button>
         </div>
       </form>
 		</section>
 	</main>
-	<script type="text/javascript">
-		var elSelected = document.querySelector('.form-prefix'),
-				elHide = document.querySelector('.icon-arrow');
-
-		elSelected.addEventListener('change', hideArrow, false);
-
-		function hideArrow (e) {
-				if (elSelected.selectedIndex != -1) {
-					elHide.classList.add('hide-before');
-				}
-
-				if (elSelected.selectedIndex == 0) {
-					elHide.classList.remove('hide-before');
-				}
-		}
-	</script>
 </body>
 </html>
