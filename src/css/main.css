@@ -3,10 +3,6 @@ body, h1 {
 	margin: 0;
 }
 
-span[class^='error'] {
-    display: none;
-}
-
 .debug {
 	border: 1px solid red;
 }
@@ -63,13 +59,6 @@ section.container-form {
 	display: flex;
 	justify-content: space-between;
 }
-
-/*.container-form form.main-form .flex-item span[class^='error'] {
-	position: absolute;
-	left: 0;
-	top: -40px;
-}*/
-
 
 /* ICONS START*/
 .container-form form.main-form .flex-item:not(:nth-last-child(2)):before {
@@ -169,6 +158,8 @@ section.container-form {
    width: 90px;
    font-family: 'Din Light';
    font-size: 32px;
+   color: #565656;
+   padding: 0 15px;
 }
 
 
@@ -324,3 +315,51 @@ section.container-form {
 	transform: rotate(225deg);
 }
 /* FLEX ITEM BUTTON SUBMIT END*/ 
+
+/* ERRORS */
+/*span[class^='error'] {
+	display: none;
+}
+*/
+span[class^='error'] {
+	font-family: 'Din Light';
+	font-size: 24.3px;
+	color: #e72c2c;
+}
+
+.container-form form.main-form .flex-item span[class='errorPrefix'] {
+	position: absolute;
+	left: 0;
+	top: -40px;
+}
+
+.container-form form.main-form .flex-item span[class='errorName'] {
+	position: absolute;
+	left: 100px;
+	top: -40px;
+}
+
+.container-form form.main-form .flex-item span[class='errorSurname'] {
+	position: absolute;
+	left: 360px;
+	top: -40px;
+}
+
+.container-form form.main-form .flex-item span[class='errorProfession'] {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+
+.container-form form.main-form .flex-item span[class='errorEmail'] {
+	position: absolute;
+	left: 0px;
+	top: -40px;
+}
+
+.container-form form.main-form .flex-item span[class='errorNationality'] {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+/* ERORRS END*/
